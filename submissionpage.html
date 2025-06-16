@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission | Picversel</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoPicverse">
+            <img src="image/Adobe Express - file.png" alt="logo">
+        </div>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="gallerypage.html">Gallery</a>
+            <a href="submissionpage.html" class="active">Submission</a>
+            <a href="communitypage.html">Community</a>
+            <a href="aboutpage.html">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Submit Your Art</h2>
+        <p class="subtitle">Share your work with us</p>
+        <form id="submissionForm">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+            <span class="error" id="emailError"></span>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Art title..">
+            <span class="error" id="titleError"></span>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Write something.."></textarea>
+
+            <label for="description">Upload File or Image</label>
+            <input type="file" id="description" name="description" accept="image/*,.pdf,.png,.jpg,.jpeg">
+            <span class="error" id="descriptionError"></span>
+
+            <label for="tags">Add Tag</label>
+            <input type="text" id="tags" name="tags">
+            <span class="error" id="tagsError"></span>
+
+            <label>Art Type</label>
+            <div class="radio-group">
+                <label><input type="radio" name="arttype" value="ai"> AI</label>
+                <label><input type="radio" name="arttype" value="original"> Original</label>
+            </div>
+            <span class="error" id="arttypeError"></span>
+            <span class="error" id="arttypeError"></span>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="copyright-terms">
+        <h2 id="copy-terms">@Human Computer Interaction PROGRAM Keenan Arelian Purnama</h2>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
